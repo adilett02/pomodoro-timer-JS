@@ -125,18 +125,18 @@ let progressBar = () => {
 // validation
 let validationCheck = () => {
   if (
-    pomodoroInput.value != 0 &&
-    pomodoroInput.value != '' &&
-    shortBreakInput.value != 0 &&
-    shortBreakInput.value != '' &&
-    longBreakInput.value != 0 &&
-    longBreakInput.value != '' &&
-    betweenBreakInput.value != 0 &&
-    betweenBreakInput.value != ''
+    Number(pomodoroInput.value) <= 99 &&
+    Number(pomodoroInput.value) > 0 &&
+    Number(shortBreakInput.value) <= 30 &&
+    Number(shortBreakInput.value) > 0 &&
+    Number(longBreakInput.value) <= 50 &&
+    Number(longBreakInput.value) > 0 &&
+    Number(betweenBreakInput.value) <= 10 &&
+    Number(betweenBreakInput.value) > 0
   ) {
     return true;
   } else {
-    alert('заполните все поля, и они должны быть больше 0');
+    alert('Правильно заполните поля!');
   }
 };
 
