@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Pomodoro-Timer</title>
+    <link rel="shortcut icon" href="fonts/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <img class="settings" src="fonts/settings.svg" alt="" />
+        <div class="box">
+          <svg viewBox="0 0 42 42" class="donut">
+            <circle
+              id="c1"
+              cx="21"
+              cy="21"
+              r="15.91549430918954"
+              stroke-dasharray="100 0"
+              stroke-dashoffset="100"
+            ></circle>
+            <circle
+              id="c2"
+              cx="21"
+              cy="21"
+              r="15.91549430918954"
+              stroke-dasharray="0 100"
+              stroke-dashoffset="0"
+            ></circle>
+          </svg>
+          <div class="timer">
+            <span class="minutes">25</span>
+            <span class="colon">:</span>
+            <span class="seconds">00</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="start">start</button>
+          <button class="pause d-none">pause</button>
+          <button class="continue d-none">continue</button>
+          <button class="stop d-none">stop</button>
+        </div>
+      </div>
+      <div class="modal d-none">
+        <form class="modal-form">
+          <div class="timer-input">
+            <p>Pomodoro</p>
+            <input id="pomodoro-input" class="modal-input" type="number" value="0" />
+          </div>
+          <div class="timer-input">
+            <p>Short Break</p>
+            <input id="short-break" class="modal-input" type="number" value="0" />
+          </div>
+          <div class="timer-input">
+            <p>Long Break</p>
+            <input id="long-break" class="modal-input" type="number" value="0" />
+          </div>
+          <div class="timer-input">
+            <p>Number of pomodoro between break</p>
+            <input id="between-break" class="modal-input" type="number" value="0" />
+          </div>
+          <div class="modal-btns">
+            <button id="close-btn">Close</button>
+            <button id="save-settings">Save</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
