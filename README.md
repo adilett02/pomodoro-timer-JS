@@ -1,3 +1,4 @@
-# pomodoro-timer-JS
+## Pomodoro-timer (Vanilla JS)
 Time management method for students
-https://adilett02.github.io/pomodoro-timer-JS/
+
+#### [Demo](https://adilett02.github.io/pomodoro-timer-JS/)
